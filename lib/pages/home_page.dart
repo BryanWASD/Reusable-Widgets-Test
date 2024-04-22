@@ -25,6 +25,7 @@ class HomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 10),
                       child: CustomTextField(
                         onTap:() {},
+                        keyboardType: TextInputType.emailAddress,
                         labelText: 'Email',
                         hintText: 'example@example.com',
                       ),
@@ -33,6 +34,7 @@ class HomePage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 10),
                       child: CustomTextField(
                         onTap:() {},
+                        keyboardType: TextInputType.text,
                         labelText: 'Password',
                         hintText: '1234',
                         obscureText: true,

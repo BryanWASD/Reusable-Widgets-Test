@@ -9,14 +9,15 @@ class CustomElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Colors.transparent,
       child: ElevatedButton(
         onPressed: onPressed, 
         style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(25),),),
+          borderRadius: BorderRadius.circular(25),),backgroundColor: const Color(0xFF14213d)),
         child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(text ?? '', style: const TextStyle(color: Color(0xFF2D2121)),),
+          Text(text ?? '', style: const TextStyle(color: Color(0xFFf8f9fa)),),
         ],
       ),
       ),

@@ -16,16 +16,17 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Colors.transparent,
       child: TextField(
         controller: textController,
         onTap: onTap,
         keyboardType: keyboardType,
         decoration: InputDecoration(
-                      border: const OutlineInputBorder(),
+                      border: const OutlineInputBorder(borderRadius:BorderRadius.all(Radius.circular(10.0),),),
                       prefixIcon: icon == null ? null : Icon(icon),
-                      prefixIconColor: const Color(0xFF000000),
+                      prefixIconColor: const Color(0xFF14213d),
                       labelText: labelText,
-                      labelStyle: const TextStyle(color: Color(0xFF000000)),
+                      labelStyle: const TextStyle(color: Color(0xFF14213d)),
                       hintText: hintText,
                     ),
       obscureText: obscureText,
